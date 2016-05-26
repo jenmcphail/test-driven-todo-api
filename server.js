@@ -44,14 +44,15 @@ app.get('/', function homepage(req, res) {
  */
 
 app.get('/api/todos/search', function search(req, res){
-  var search = req.query.task
+  //below code causes the tests to fail
+  // var search = req.query.task
 
-  for (i = 0; i < todos.length; i++){
-    if (search == todos[i].task){
-      res.json(todos[i].task)
-    }
-  }
-}
+  // for (i = 0; i < todos.length; i++){
+  //   if (search == todos[i].task){
+  //     res.json(todos[i].task)
+  //   }
+  // }
+};
    // This endpoint responds with the search results from the
    // * query in the request. COMPLETE THIS ENDPOINT LAST.
 
